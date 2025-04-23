@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website — a vibrant showcase of who I am, what I do, and the projects I've built with passion, code, and a little bit of animation magic 🎨💻.
 
-![Portfolio Preview](https://your-preview-image-url.com)
+![Portfolio Preview](https://dhruv-shgal.github.io/Portfolio/)
 
 ## 🚀 About Me
 

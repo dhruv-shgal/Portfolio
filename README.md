@@ -58,7 +58,14 @@ Explore more on [my GitHub](https://github.com/dhruv-shgal).
 
 ## 📸 Screenshots
 
-Include some screenshots or a preview GIF here!
+### 🔹 Homepage
+![Homepage](./assets/images/web_main.png)
+
+### 🔹 Certificates  Section
+![Projects](./assets/images/web_cer.png)
+
+### 🔹 Achievements Section
+![Mobile View](./assets/images/web_ach.png)
 
 ---
 

@@ -649,7 +649,7 @@ section:nth-of-type(odd) {
 
 .certificate-3d {
     width: 100%;
-    height: 300px;
+    height: 350px; /* Increased height to accommodate content */
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.8s;
@@ -672,6 +672,7 @@ section:nth-of-type(odd) {
     align-items: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     padding: 30px;
+    overflow: hidden; /* Prevent content overflow */
 }
 
 .certificate-3d-front {
@@ -705,20 +706,37 @@ section:nth-of-type(odd) {
 .certificate-3d-front h3 {
     font-size: 18px;
     text-align: center;
+    margin-top: 15px;
+    padding: 0 10px;
+    line-height: 1.4;
 }
 
 .certificate-back-content {
     text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
 }
 
 .certificate-back-content h4 {
     font-size: 16px;
     margin-bottom: 15px;
+    line-height: 1.4;
 }
 
 .certificate-back-content p {
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    /* Add ellipsis for very long text */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .certificate-date {
@@ -884,6 +902,15 @@ section:nth-of-type(odd) {
     .leadership-logo {
         margin-right: 0;
         margin-bottom: var(--spacing-sm);
+    }
+
+    .certificates-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .certificate-3d {
+        height: 320px; /* Slightly shorter on mobile */
     }
 }
 

@@ -672,7 +672,8 @@ section:nth-of-type(odd) {
     align-items: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     padding: 30px;
-    overflow: hidden; /* Prevent content overflow */
+    overflow: hidden;
+    text-align: center;
 }
 
 .certificate-3d-front {
@@ -718,30 +719,43 @@ section:nth-of-type(odd) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0 10px;
 }
 
 .certificate-back-content h4 {
     font-size: 16px;
     margin-bottom: 15px;
-    line-height: 1.4;
+    line-height: 1.6;
+    width: 100%;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.certificate-back-content h4 br {
+    display: block;
+    content: "";
+    margin: 5px 0;
+}
+
+.certificate-back-content h4 br + * {
+    margin-top: 5px;
 }
 
 .certificate-back-content p {
     font-size: 14px;
-    margin-bottom: 15px;
+    margin: 10px 0 15px;
     line-height: 1.4;
-    /* Add ellipsis for very long text */
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
 }
 
 .certificate-date {
     font-size: 12px;
     opacity: 0.8;
+    width: 100%;
+    text-align: center;
 }
 
 .certificate-button {
@@ -1400,4 +1414,12 @@ footer {
 .contact-form:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Add specific styles for the issuer text */
+.certificate-back-content h4 span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }

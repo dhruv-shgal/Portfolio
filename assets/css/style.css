@@ -572,12 +572,27 @@ section:nth-of-type(odd) {
 
 .project-image img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.project-image_1 img{
+    width: 100%;
     height: 200px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
+/* .project-image_2 img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+} */
 
 .project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+.project-card:hover .project-image_1 img {
     transform: scale(1.1);
 }
 
